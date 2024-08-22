@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="css e js/site.css">
+    <link rel="stylesheet" href="css e js/slide.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo"><img src="imgs/avotakulogo-removebg-preview.png" alt="" width="100" height="80"></a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#" onclick="toggleLoginForm(event)">Login</a></li>
+                </ul>
+                <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            </div>
+        </nav>
+    </header>
+    
+ 
+    <main>
+        <section class="slider">
+            <div class="slider-content">
+                
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+    
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="imgs/slide1.1.jpg" alt="slide 1">
+                    <img class="img-mobile" src="imgs/slide1.jpg" alt="slide 1">
+                </div>
+    
+                <div class="slide-box">
+                    <img class="img-desktop" src="imgs/slide2.2.jpg" alt="slide 3">
+                    <img class="img-mobile" src="img/slide-2-mob.jpg" alt="slide 1">
+                </div>
+    
+                <div class="slide-box">
+                    <img class="img-desktop" src="imgs/slide3.jpg" alt="slide 3">
+                    <img class="img-mobile" src="img/slide-3-mob.jpg" alt="slide 3">
+                </div>
+    
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+    
+            </div>
+        </section>
+        <hr>
+        <div class="conteudo">
+            
+
+
+    
+    
+    
+            <div class="materia1"> 
+                <a href="desconhecido.html"><img id="fot-mat"  src="imgs/slide2.2.jpg" alt="" width="400" height="300"></a>
+                
+                <div class="info">
+               <a id="sessao" href="animes.html"><p id="info">Animes</a></p> <p id="info"><time pubdate>2024-08-05</time>.</p></p>
+           </div>
+           <div class="titulo">
+               <a id="titulo" href="desconhecido.html"><h1>10 animes que provavelmente você não assistiu</h1></a>
+               <br>
+               <p id="sobretitulo">Uma lista de 10 animes "desconhecidos" que você provavelmennte não viu...</p>
+           </div>
+           
+            </div>
+
+            <div class="materia2"> 
+                <a href="sobrenatural.html"><img id="fot-mat" src="imgs/slide1.jpg" alt="" width="400" height="300"></a>
+                
+                 <div class="info">
+                <a id="sessao" href="animes.html"><p id="info">Animes</a></p> <p id="info"><time pubdate>2024-08-05</time>.</p></p>
+            </div>
+            <div class="titulo">
+                <a id="titulo" href="sobrenatural.html"><h1>5 Animes Sobrenaturais Imperdíveis para Assistir em 2024</h1></a>
+                <br>
+                <p id="sobretitulo">Uma lista de 5 animes sobrenaturais, alguns antigos  para passar assistir em 2024.</p>
+            </div>
+            <hr id="linha">
+            </div> 
+               
+    
+            <div class="materia3"> 
+                <a href="fantasia.html"><img id="fot-mat" src="imgs/slide3.jpg" alt="" width="400" height="300"></a>
+                
+                <div class="info">
+               <a id="sessao" href="animes.html"><p id="info">Animes</a></p> <p id="info"><time pubdate>2024-08-05</time>.</p></p>
+           </div>
+           <div class="titulo">
+               <a id="titulo" href="fantasia.html"><h1>   5 Animes de Fantasia para Explorar em 2024</h1></a>
+               <br>
+               <p id="sobretitulo">Uma lista escrita por mim de 5 animes sobrenaturais para passar o tempo.</p>
+           </div>
+           <hr id="linha">
+            </div>
+    
+    
+            <div class="materia4"> 
+                <a href="hsr.html"><img id="fot-mat" src="imgs/d41abb02fff2ee1f9a027597e3824b08_2917261122861913588.jpg" alt="" width="400" height="300"></a>
+                
+                <div class="info">
+               <a id="sessao" href="jogos.html"><p id="info">Jogos</a></p> <p id="info"><time pubdate>2024-08-05</time>.</p></p>
+           </div>
+           <div class="titulo">
+               <a id="titulo" href="hsr.html"><h1>5 jogos RPG estilo anime para celular (2020-2024)</h1></a>
+               <br>
+               <p id="sobretitulo">Uma lista escrita por mim de 5 animes sobrenaturais para passar o tempo.</p>
+           </div>
+          
+            </div>
+    
+           
+         
+    </main>
+
+ 
+    <div id="login-form" class="modal">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="toggleLoginForm(event)">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form-content">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="css e js/site.js"></script>
+</body>
+</html>
